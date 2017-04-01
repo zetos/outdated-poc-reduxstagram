@@ -4,18 +4,24 @@ import {
     Link,
 } from 'react-router-dom';
 
-const Main = React.createClass({
+export default class Main extends React.Component {
+
     render() {
+        const Component = this.props.component;
         return (
             <Router>
                 <div>
                     <h1>
                         <Link to="/">Reduxstagram</Link>
                     </h1>
+                    <Component/>
                 </div>
             </Router>
         );
-    },
-});
+    }
+}
 
-export default Main;
+
+Main.propTypes = {
+    component: React.PropTypes.func,
+};
