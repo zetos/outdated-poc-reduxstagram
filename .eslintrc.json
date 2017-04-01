@@ -1,11 +1,18 @@
 {
-    "extends": ["plugin:react/recommended", "google"],
+    "extends": [
+        // "eslint:recommended",
+        "plugin:react/recommended",
+        "google"
+    ],
     "parser": "babel-eslint",
-    "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": false,
-        "codeFrame": false
-    },
+    // "parserOptions": {
+    //     "sourceType": "module",
+    //     "allowImportExportEverywhere": false,
+    //     "codeFrame": false,
+    //     "ecmaFeatures": {
+    //         "jsx": true
+    //     }
+    // },
     "plugins": [
         "react"
     ]
