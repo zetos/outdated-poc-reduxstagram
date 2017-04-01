@@ -1,5 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
-import App from './components/app/App';
+import {render} from 'react-dom';
+// import App from './components/app/App';
 
-render(<App />, document.getElementById('app'));
+// import styles
+// import styles from './styles/style.scss';
+
+// import components
+import Main from './components/Main';
+
+render(<Main />, document.getElementById('app'));
