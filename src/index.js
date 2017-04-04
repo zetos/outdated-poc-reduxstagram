@@ -16,21 +16,17 @@ styles;
 // import components
 import Main from './components/Main';
 import Single from './components/Single';
-import PhotoGrid from './components/PhotoGrid';
+import App from './components/App';
 
 const photo = () => (
     <Main component={Single} />
-);
-
-const home = () => (
-    <Main component={PhotoGrid} />
 );
 
 const route = (
     <Provider store={store}>
         <Router history={history}>
             <div>
-                <Route exact path="/" component={home} />
+                <Route exact path="/" component={App} />
                 <Route path="/view/:postId" component={photo} />
             </div>
         </Router>
