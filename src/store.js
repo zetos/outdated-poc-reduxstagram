@@ -2,7 +2,7 @@ import {createStore, compse} from 'redux';
 // import {ConnectedRouter, routerReducer, routerMiddleware, push} from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 
-import rootReducer from './reduxers/index';
+import rootReducer from './reducers/index';
 
 // Data
 import comments from './data/comments';
